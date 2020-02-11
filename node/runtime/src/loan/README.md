@@ -3,7 +3,7 @@
 
 # Implementation
 
-The module has 6 dispatchable functions. Each function goes through the example with bob and alice.
+The module has 6 dispatchable functions. Each function goes through the example with bob and alice(WIP).
 
 ## `request`
 
