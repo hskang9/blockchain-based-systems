@@ -3,7 +3,9 @@
 
 # Implementation
 
-The module has 6 dispatchable functions. Each function goes through the example with bob and alice.
+The module has 6 dispatchable functions. Each function goes through the example with bob and alice(WIP).
+
+TODO: add details about interest rate calculation
 
 ## `request`
 
@@ -158,6 +160,29 @@ construct_runtime!(
         Loan: loan::{Module, Call, Storage, Event<T>},
     }
 ```
+### `run a solo node for development`:
+
+run commands in the project root folder:
+
+```bash
+cargo build --release # build compiled blockchain binary
+# purge previous chaindata since generated block's seed will be different from before
+./target/release/substrate purge-chain --dev 
+# run blockchain in solochain development mode
+./target/release/substrate --dev
+```
+
+### `setup a local testnet`:
+
+setup bob and alice nodes in local environment with [bash command](https://gist.github.com/hskang9/617088926e28fb4cf57e6d720dc34d26)
+
+rpc nodes require [nginx configuration](https://gist.github.com/hskang9/b96e873f0f09643fa6c5360aef40c40b) for wss RPC request
+
+### `setup a staging testnet`:
+
+set inital validators in [chainspec.rs]() 
+
+rpc nodes require [nginx configuration](https://gist.github.com/hskang9/b96e873f0f09643fa6c5360aef40c40b) for wss RPC request
 
 # Demo
 
