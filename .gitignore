@@ -5,3 +5,25 @@
 **/*.rs.bk
 
 .DS_Store
+
+curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d \
+  '{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+      "babe",
+      "release twin wrestle valley side craft slide enroll clever puppy wrist village",   "0x0621e9f97d36e3df26e35deb54bcfce12e9335ceddb5dc3783f4a73a47d2614e"
+    ]
+  }'
+
+curl http://localhost:9933 -H "Content-Type:application/json;charset=utf-8" -d \
+  '{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+      "gran",
+      "release twin wrestle valley side craft slide enroll clever puppy wrist village",   "0x6990774a5b728a1bda391c9f2d09583e065900095e1da3d434e051471f5c9c69"
+    ]
+  }'
