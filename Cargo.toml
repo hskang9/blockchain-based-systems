@@ -3,7 +3,7 @@ name = "substrate"
 path = "node/src/main.rs"
 
 [package]
-name = "substrate"
+name = "vault"
 version = "2.0.0"
 authors = ["Parity Technologies <admin@parity.io>"]
 build = "build.rs"
